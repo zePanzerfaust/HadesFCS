@@ -1,0 +1,2 @@
+add_library(cmsis_stm32f4xx)
+target_include_directories(cmsis_stm32f4xx INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/Include)

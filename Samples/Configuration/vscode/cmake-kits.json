@@ -1,0 +1,15 @@
+[
+    {
+        "name": "GNU ARM GCC",
+        "toolchainFile": "${workspaceFolder}/ARMGCCToolchain.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        },
+        "cmakeSettings": {
+            "CROSS_COMPILER_TOOLCHAIN_DIR": "/opt/local/bin"
+        },
+        "environmentVariables": {
+            "GNU_ARM_GCC_TOOLCHAIN_DIR": "/opt/local/bin"
+        }
+    }
+]

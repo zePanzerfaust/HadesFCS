@@ -42,6 +42,5 @@ int main()
 
     printf("Recovered data: %f %f %f %f", extractedFloats[0], extractedFloats[1], extractedFloats[2], extractedFloats[3]);
 
-    getchar();
     return 0;
 }

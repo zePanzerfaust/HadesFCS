@@ -1,0 +1,13 @@
+{
+    "cmake.generator": "Unix Makefiles",
+    //"cmake.configureSettings": {
+    //    "CMAKE_MAKE_PROGRAM": "/usr/bin/make"
+    //},
+    "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+    "cmake.debugConfig": {
+        "environment": [
+            {
+            }
+        ]
+    }
+}

@@ -18,7 +18,7 @@
 typedef struct {
 	float Kp;
 	float Ki;
-	float Kff
+	float Kff;
 	float limMin;
 	float limMax;
 	float limMinFF;

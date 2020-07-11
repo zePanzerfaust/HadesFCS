@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "F4QUAD J-Link",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/Debug/Firmware/F4Quad/Core/F4QUAD.elf",
+            "serverpath": "/Applications/SEGGER/JLink_V646k/JLinkGDBServer",
+            "servertype": "jlink",
+            "device": "STM32F405RG",
+            "interface": "jtag",
+            //"serialNumber": "", // if you have more than one J-Link probe add the serial number here 
+            "jlinkscript": "",
+            "runToMain": true,
+            "armToolchainPath": "${env:GNU_ARM_GCC_TOOLCHAIN_DIR}",
+            "svdFile": "${workspaceRoot}/STM32F405.svd"
+        }
+    ]
+}

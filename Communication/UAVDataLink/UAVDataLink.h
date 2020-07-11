@@ -87,7 +87,7 @@ uint8_t UAVDataLink_pack(const uint8_t IDA, const uint8_t IDB, const uint8_t PAY
 uint8_t UAVDataLink_unpack(uint8_t *receivedPacket, uint8_t receivedPacketLength, uint8_t *packetHeader, uint8_t *payload) {
 
     /* Decode COBS framing */
-    uint8_t *decodeBuffer;
+    uint8_t decodeBuffer[256] = {0};  // TODO: see whats going on an use sensible size
     UAVDataLink_decodeCOBS(receivedPacket, receivedPacketLength, decodeBuffer);
 
     /* Extract packet parameters and place in header */
