@@ -6,6 +6,7 @@ set(CMAKE_C_STANDARD 99)
 
 set(SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/main.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/UAVDataLink.c
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
